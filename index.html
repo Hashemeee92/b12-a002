@@ -7,7 +7,24 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <style>
-    
+    .bloom{
+        background-image: url(./assets/deal-bloom.png);
+        border: 1 px burlywood;
+        margin: 20px;
+    }
+    .ana-plant{
+        background-image: url(./assets/deal-ana.png);
+        border: 1 px burlywood;
+        margin: 20px;
+    }
+
+    .Container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2, 250px);
+        justify-content: center;
+        align-items: center;
+    }
 </style>
 <body>
     <header>
@@ -135,30 +152,23 @@
 <section>
     <div>
         <!-- images seeting 3 -->
-         <div class="grid grid-cols-2 m-37.5 gap-auto">
-            <div class="container-image">
-                
-                <img class="rounded-2xl m-3.5" src="./assets/deal-bloom.png" alt="">
-                
-                <img class="rounded-2xl m-3.5" src="./assets/deal-ana.png" alt="">
-                <img class="rounded 2xl m-10" src="./assets/deal-zabo.png" alt="">
-
-            </div>
-            
-            <!-- <p class="align-top mx-[400px] p-20 text-2xl text-white">60% off Bloom plant</p>
-            <p class="align-top my-[-300px] p-20 text-2xl text-white">Shop now</p> -->
-         </div>
+         
     </div>
 </section>
 
-<section class="">
-    <!-- Colorful Bunch -->
-     <div class="items-center">
-        <img src="./assets/news-letter-bg.png" alt="">
-        <input  type="text" placeholder="Write your email">
-        <button class="bg-amber-400 font-bold p-2 fon">Subscribe</button>
-
-
+<section class="Container">
+    <!-- latest deal -->
+     <div class="bloom">
+        <h2>60% off | Bloom Plan</h2>
+        <p>Shop Now</p>
+     </div>
+     <div class="ana-plant">
+        <h2>30% off | Ana Plant</h2>
+        <h4>shop Now</h4>
+     </div>
+     <div class="lates-deal">
+        <h2>25% off | Zabo Plant</h2>
+        <h4>Shop Now</h4>
      </div>
 </section>
 
