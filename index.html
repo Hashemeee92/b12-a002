@@ -7,8 +7,60 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <style>
+    body{
+        padding: 300px;
+        background-color: blanchedalmond;
+    }
+    .container{
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    .left-side{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        text-align: center;
+
+           }
+
+    .bloom-plant{
+        position: absolute;
+        top: 8px;
+        left: 20px;
+        width: 400px;
+        height: 100px;
+        color: white;
+        font-size: 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+.ana-plant{
+    position: absolute;
+        bottom: 8px;
+        left: 20px;
+        width: 400px;
+        height: 100px;
+        color: white;
+        font-size: 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+}
 .right-side{
-    width: 800px;
+    position: relative;
+    top: 20px;
+    right: 10px;
+    width: 1000px;
     height: 200px;
     display: flex;
     font-size: 30px;
@@ -17,6 +69,27 @@
     justify-content: center;
     text-align: center;
 
+}
+.right-image{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+.joint-header{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: joint-header;
+}
+.colorful-bunch{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.news-letter{
+    position: absolute;
+    top: 50%;
+    left:  30%;
 }
 </style>
 <body>
@@ -149,28 +222,40 @@
     </div>
 </section>
 
-<section class="Container">
+<section class="">
     <!-- latest deal -->
      <div class="container">
         <div class="left-side">
-            <div class="bloom">60% off <br>Shop now</div>
+.colorful-bunch{
+
+}            <div class="bloom-plant">30% off | Ana Plant <br>Shop now</div>
             <figure>
                 <img src="./assets/deal-bloom.png" alt="">
-                <caption>left side 1st image, 60% off price</caption>
+         
             </figure>
-            <div class="bloom">30% off <br>shop now</div>
+            <div class="ana-plant">30% off | Ana Plant <br>shop now</div>
             <figure>
                 <img src="./assets/deal-ana.png" alt="">
             </figure>
         </div>
         <div class="right-side">
+            <div class="righr-image">25% of | Zabo Plant <br>Shop now</div>
             <figure>
                 <img src="./assets/deal-zabo.png" alt="">
             </figure>
-            add at text
+            
         </div>
      </div>
 </section>
+    <section class="colorful-bunch">
+        <img src="./assets/news-letter-bg.png" alt="">
+        <div class="news-letter">
+            <h2 class="joint-header">Joint Colorful Bunch</h2>
+            <input type="email" name="" id="" placeholder="Write email">
+            
+            <button class="w-67.5 h-12.5 bg-amber-400 m-2 p-1 gap-3 text-white font-medium">Subscribe</button>
+        </div>
+    </section>
 
     </main>
     <footer>
