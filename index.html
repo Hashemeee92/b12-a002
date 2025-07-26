@@ -7,24 +7,17 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <style>
-    .bloom{
-        background-image: url(./assets/deal-bloom.png);
-        border: 1 px burlywood;
-        margin: 20px;
-    }
-    .ana-plant{
-        background-image: url(./assets/deal-ana.png);
-        border: 1 px burlywood;
-        margin: 20px;
-    }
+.right-side{
+    width: 800px;
+    height: 200px;
+    display: flex;
+    font-size: 30px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
-    .Container{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2, 250px);
-        justify-content: center;
-        align-items: center;
-    }
+}
 </style>
 <body>
     <header>
@@ -158,17 +151,24 @@
 
 <section class="Container">
     <!-- latest deal -->
-     <div class="bloom">
-        <h2>60% off | Bloom Plan</h2>
-        <p>Shop Now</p>
-     </div>
-     <div class="ana-plant">
-        <h2>30% off | Ana Plant</h2>
-        <h4>shop Now</h4>
-     </div>
-     <div class="lates-deal">
-        <h2>25% off | Zabo Plant</h2>
-        <h4>Shop Now</h4>
+     <div class="container">
+        <div class="left-side">
+            <div class="bloom">60% off <br>Shop now</div>
+            <figure>
+                <img src="./assets/deal-bloom.png" alt="">
+                <caption>left side 1st image, 60% off price</caption>
+            </figure>
+            <div class="bloom">30% off <br>shop now</div>
+            <figure>
+                <img src="./assets/deal-ana.png" alt="">
+            </figure>
+        </div>
+        <div class="right-side">
+            <figure>
+                <img src="./assets/deal-zabo.png" alt="">
+            </figure>
+            add at text
+        </div>
      </div>
 </section>
 
