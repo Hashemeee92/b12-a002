@@ -80,16 +80,34 @@
     font-weight: 700;
     font-family: sans-serif;
     color: joint-header;
+
 }
 .colorful-bunch{
     position: relative;
     text-align: center;
     color: white;
+    margin: 20px;
+    padding: 30px;
+    max-width: 1440px;
+    max-height: 530px;
 }
 .news-letter{
     position: absolute;
     top: 50%;
-    left:  30%;
+    left: 30%;
+}
+.email{
+    width: 600px;
+    font-size: 2rem;
+    background-color: #FFFFFF;
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+   
+
+}
+.footer-logo{
+    font-size: 16px;
+    font-weight: 400;
 }
 </style>
 <body>
@@ -251,15 +269,15 @@
         <img src="./assets/news-letter-bg.png" alt="">
         <div class="news-letter">
             <h2 class="joint-header">Joint Colorful Bunch</h2>
-            <input type="email" name="" id="" placeholder="Write email">
+            <input class="email" type="email" name="" id="" placeholder="Write email">
             
-            <button class="w-67.5 h-12.5 bg-amber-400 m-2 p-1 gap-3 text-white font-medium">Subscribe</button>
+            <button class="w-67.5 h-12.5 bg-lime-600 m-2 pl-3 pr-3 gap-3 text-white font-medium rounded-2xl text-3xl">Subscribe</button>
         </div>
     </section>
 
     </main>
     <footer>
-        <section class="grid grid-cols-4"
+        <section class="grid grid-cols-4 "
             <div>
                 <div class="grid grid-rows-2 ">
                     <img src="./assets/logo.png" alt="">
@@ -267,7 +285,7 @@
                 </div>
 
             </div>
-            <div>
+            <div class="footer-logo">
                 <ul>
                     <li>Home</li>
                     <li>About Us</li>
